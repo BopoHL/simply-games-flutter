@@ -1,4 +1,4 @@
-# snake_game
+# Mini games with Flutter
 
 A new Flutter project.
 
