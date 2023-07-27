@@ -10,7 +10,11 @@ class TetrisGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final model = context.watch<TetrisProvider>();
-    return GestureDetector(
+    if (model.isGameOver) {
+      return AlertDialog(title: const Text('Game Over!'),
+      content: FilledButton(onPressed: (){model.newGame();}, child: const Text('Try again')),);
+    }
+    else {return GestureDetector(
       onHorizontalDragEnd: (details) {
         if (details.primaryVelocity! > 0) {
           if (!model.checkCollision(Direction.right)) {
@@ -39,6 +43,6 @@ class TetrisGame extends StatelessWidget {
           }
         },
       ),
-    );
+    );}
   }
 }

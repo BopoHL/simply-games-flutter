@@ -4,6 +4,7 @@ import '../../providers/snake_provider.dart';
 
 
 class GameOverDialog extends StatelessWidget {
+
   const GameOverDialog({super.key});
 
   @override

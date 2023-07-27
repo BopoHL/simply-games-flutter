@@ -1,6 +1,6 @@
 # Mini games with Flutter
 
-A new Flutter project.
+Tutorial source: https://www.youtube.com/@createdbykoko
 
 ## Getting Started
 
